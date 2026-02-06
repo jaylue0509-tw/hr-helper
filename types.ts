@@ -4,6 +4,8 @@ export interface Person {
   id: string;
   name: string;
   department?: string;
+  attended?: boolean;
+  checkInTime?: number;
 }
 
 export interface Group {
@@ -16,6 +18,7 @@ export enum AppMode {
   INPUT = 'INPUT',
   DRAW = 'DRAW',
   GROUP = 'GROUP',
+  ATTENDANCE = 'ATTENDANCE',
 }
 
 export interface DrawHistoryItem {
