@@ -28,16 +28,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: purehr
 
       - name: Build
         run: npm run build
-        working-directory: purehr
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: purehr/dist
+          path: dist
 
   deploy:
     environment:
