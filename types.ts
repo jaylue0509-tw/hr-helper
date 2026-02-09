@@ -6,6 +6,7 @@ export interface Person {
   department?: string;
   attended?: boolean;
   checkInTime?: number;
+  region?: string;
 }
 
 export interface Group {
